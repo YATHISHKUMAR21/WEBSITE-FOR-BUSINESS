@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us on WhatsApp</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #000; /* Fallback color */
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #dddddd;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            max-width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #1abf57;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Animated background */
+        .animation-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .stripe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.1) 10px,
+                rgba(0, 0, 0, 0.1) 10px,
+                rgba(0, 0, 0, 0.1) 20px
+            );
+            animation: slide 4s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-container">
+        <div class="stripe"></div>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us on WhatsApp</h1>
+        <p>Scan the image below to get in touch with us directly on WhatsApp.</p>
+        
+        <!-- Custom Image -->
+        <img src="contact me.png" alt="Contact Us on WhatsApp">
+
+        <p>Or click the button below to message us directly.</p>
+        <a class="contact-btn" href="https://wa.me/1234567890" target="_blank">Message Us on WhatsApp</a>
+    </div>
+
+</body>
+</html>
